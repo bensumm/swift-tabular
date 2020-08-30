@@ -6,10 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		4AB3857F24FC55C700FA097E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3857E24FC55C700FA097E /* main.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		4AB3857924FC55C700FA097E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -23,8 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4AB3857B24FC55C700FA097E /* swift-tabular */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-tabular"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AB3857E24FC55C700FA097E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4AB3857B24FC55C700FA097E /* swift-tabular */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "swift-tabular"; path = "/Users/Sparta/Development/swift-tabular/build/Debug/swift-tabular"; sourceTree = "<absolute>"; };
 		4AB3858524FC567100FA097E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,25 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB3858524FC567100FA097E /* .gitignore */,
-				4AB3857D24FC55C700FA097E /* swift-tabular */,
-				4AB3857C24FC55C700FA097E /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		4AB3857C24FC55C700FA097E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4AB3857B24FC55C700FA097E /* swift-tabular */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4AB3857D24FC55C700FA097E /* swift-tabular */ = {
-			isa = PBXGroup;
-			children = (
-				4AB3857E24FC55C700FA097E /* main.swift */,
-			);
-			path = "swift-tabular";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,7 +84,7 @@
 				Base,
 			);
 			mainGroup = 4AB3857224FC55C700FA097E;
-			productRefGroup = 4AB3857C24FC55C700FA097E /* Products */;
+			productRefGroup = 4AB3857224FC55C700FA097E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -121,7 +98,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB3857F24FC55C700FA097E /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
