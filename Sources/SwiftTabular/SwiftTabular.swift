@@ -1,3 +1,9 @@
 struct SwiftTabular {
-    var text = "Hello, World!"
+    func toListOfLists(asciiTable) -> [[String]] {
+        separateIntoLines(asciiTable)
+    }
+    
+    func separateIntoLines(asciiTable) -> [String] {
+        
+    }
 }

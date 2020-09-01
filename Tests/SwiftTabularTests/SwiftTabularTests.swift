@@ -2,16 +2,33 @@ import XCTest
 @testable import SwiftTabular
 
 final class SwiftTabularTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(SwiftTabular().text, "Hello, World!")
-    }
+    func testToListOfLists() {
+        let inputTable = """
+            +-----------+--------------------+--------------+
+            | name      | dob                | predictable? |
+            +-----------+--------------------+--------------+
+            | Malcolm   | September 20, 2468 | false        |
+            | Reynolds  |                    |              |
+            +-----------+--------------------+--------------+
+            | Zoe       | February 15, 2484  |              |
+            | Washburne |                    |              |
+            +-----------+--------------------+--------------+
+            | Derrial   | nil                | true         |
+            | Book      |                    |              |
+            +-----------+--------------------+--------------+
+            """
+        let expected = [
+          ["name", "dob", "predictable?"],
+          ["Malcolm Reynolds", "September 20, 2468", false],
+          ["Zoe Washburne", "February 15, 2484", ""],
+          ["Derrial Book", nil, true]
+        ]
+        
+        var actual = SwiftTabular.toListOfLists(inputTable)
+        
+        XCTAssertEqual(actual, expected)
 
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+    }
 }
 
 //describe "to_list_of_lists" do
